@@ -1,0 +1,16 @@
+body{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+main, img{
+    max-width: 450px;
+}
+
+table{
+    width: 100%;
+}
+td:last-child{
+    text-align: right;
+}
