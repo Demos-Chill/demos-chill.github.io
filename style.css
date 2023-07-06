@@ -19,8 +19,10 @@ td:last-child{
     position: fixed;
     width: 100%;
     height: 100%;
+    pointer-events: none;
 }
 .marquee-x{
+    pointer-events: auto;
 }
 .marquee-inner{
     background-color: greenyellow;
