@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demos & Chill</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    body {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+    }
+    main,
+    img {
+      max-width: 450px;
+    }
+
+    table {
+      width: 100%;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    .marquee-y {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .marquee-inner {
+      background-color: greenyellow;
+      width: 320px;
+      text-align: center;
+      padding: 8px 4px;
+      pointer-events: auto;
+    }
+  </style>
   <body>
     <marquee direction="down" behavior="alternate" class="marquee-y">
       <marquee behavior="alternate" class="marquee-x">
         <div class="marquee-inner">
-          Demos & Chill 4 is on July 13th. <a href="https://partiful.com/e/nyJQXOfiaeMr6dAoeTkq">Sign up now!</a>
+          Demos & Chill 4 is on July 13th.
+          <a href="https://partiful.com/e/nyJQXOfiaeMr6dAoeTkq">Sign up now!</a>
         </div>
       </marquee>
     </marquee>
