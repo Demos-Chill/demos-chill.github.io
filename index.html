@@ -1,160 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demos & Chill</title>
-  </head>
-  <style>
+</head>
+<style>
     body {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 32px 0;
     }
+
     main,
     img {
-      max-width: 450px;
+        width: 100%;
+        max-width: 488px;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            padding: 0 16px;
+            /* Add horizontal padding to provide space on smaller screens */
+        }
     }
 
     table {
-      width: 100%;
+        width: 100%;
     }
+
     td:last-child {
-      text-align: right;
+        text-align: right;
     }
+
     .marquee-y {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
     }
+
     .marquee-inner {
-      background-color: greenyellow;
-      width: 320px;
-      text-align: center;
-      padding: 8px 4px;
-      pointer-events: auto;
+        background-color: greenyellow;
+        width: 320px;
+        text-align: center;
+        padding: 8px 4px;
+        pointer-events: auto;
     }
-  </style>
-  <body>
+</style>
+
+<body>
     <marquee direction="down" behavior="alternate" class="marquee-y">
-      <marquee behavior="alternate" class="marquee-x">
-        <div class="marquee-inner">
-          Demos & Chill 4 is on July 13th.
-          <a href="https://partiful.com/e/nyJQXOfiaeMr6dAoeTkq">Sign up now!</a>
-        </div>
-      </marquee>
+        <marquee behavior="alternate" class="marquee-x">
+            <div class="marquee-inner">
+                Demos & Chill 4 is on July 13th.
+                <a href="https://partiful.com/e/nyJQXOfiaeMr6dAoeTkq">Sign up now!</a>
+            </div>
+        </marquee>
     </marquee>
 
     <main>
-      <img src="baddrawing.svg" alt="stick figures demo'ing" />
-      <h2>Demos & Chill</h2>
-      <p>
-        Is a small event series put on by a group of friends,
-        once-a-month-or-two-ish, where people come show off cool stuff they've
-        made.
-      </p>
-      <h2>Demos from event 1</h2>
-      <table>
-        <tr>
-          <td>Documentary</td>
-          <td>Prince Boucher</td>
-        </tr>
-        <tr>
-          <td>Poetry Camera</td>
-          <td>Carolyn Zhang and Ryan Mather</td>
-        </tr>
-        <tr>
-          <td>A Farsi Typeface</td>
-          <td>Omar Mohammad</td>
-        </tr>
-        <tr>
-          <td>Super Wide Interfaces</td>
-          <td>Gray Crawford</td>
-        </tr>
-        <tr>
-          <td>Bill Splitting Smart Contract</td>
-          <td>James Magahern</td>
-        </tr>
-        <tr>
-          <td>Cheating at Solitaire</td>
-          <td>Charles Magahern & Friend</td>
-        </tr>
-        <tr>
-          <td>Midnight Animation Tips</td>
-          <td>Marisa Lu</td>
-        </tr>
-      </table>
+        <img src="baddrawing.svg" alt="stick figures demo'ing" />
+        <h2>Demos & Chill</h2>
+        <p>
+            Is a small event series put on by a group of friends,
+            once-a-month-or-two-ish, where people come show off cool stuff they've
+            made.
+        </p>
+        <h2>Demos from event 1</h2>
+        <table>
+            <tr>
+                <td>Documentary</td>
+                <td>Prince Boucher</td>
+            </tr>
+            <tr>
+                <td>Poetry Camera</td>
+                <td>Carolyn Zhang and Ryan Mather</td>
+            </tr>
+            <tr>
+                <td>A Farsi Typeface</td>
+                <td>Omar Mohammad</td>
+            </tr>
+            <tr>
+                <td>Super Wide Interfaces</td>
+                <td>Gray Crawford</td>
+            </tr>
+            <tr>
+                <td>Bill Splitting Smart Contract</td>
+                <td>James Magahern</td>
+            </tr>
+            <tr>
+                <td>Cheating at Solitaire</td>
+                <td>Charles Magahern & Friend</td>
+            </tr>
+            <tr>
+                <td>Midnight Animation Tips</td>
+                <td>Marisa Lu</td>
+            </tr>
+        </table>
 
-      <h2>Demos from event 2</h2>
-      <table>
-        <tr>
-          <td>Playbit</td>
-          <td>Rasmus Andersson</td>
-        </tr>
-        <tr>
-          <td>A Personal Journaling App</td>
-          <td>Brendan Aronoff</td>
-        </tr>
-        <tr>
-          <td>Reprocessing</td>
-          <td>Benjamin San Souci</td>
-        </tr>
-        <tr>
-          <td>Shaders & CSS</td>
-          <td>Cheng Lou</td>
-        </tr>
-        <tr>
-          <td>Audio Book Notes</td>
-          <td>Andy Matuschak</td>
-        </tr>
-        <tr>
-          <td>Clippy for Research Papers</td>
-          <td>Sean Grove</td>
-        </tr>
-        <tr>
-          <td>Auto Carbon Offset Truck</td>
-          <td>Kane Hsieh</td>
-        </tr>
-      </table>
+        <h2>Demos from event 2</h2>
+        <table>
+            <tr>
+                <td>Playbit</td>
+                <td>Rasmus Andersson</td>
+            </tr>
+            <tr>
+                <td>A Personal Journaling App</td>
+                <td>Brendan Aronoff</td>
+            </tr>
+            <tr>
+                <td>Reprocessing</td>
+                <td>Benjamin San Souci</td>
+            </tr>
+            <tr>
+                <td>Shaders & CSS</td>
+                <td>Cheng Lou</td>
+            </tr>
+            <tr>
+                <td>Audio Book Notes</td>
+                <td>Andy Matuschak</td>
+            </tr>
+            <tr>
+                <td>Clippy for Research Papers</td>
+                <td>Sean Grove</td>
+            </tr>
+            <tr>
+                <td>Auto Carbon Offset Truck</td>
+                <td>Kane Hsieh</td>
+            </tr>
+        </table>
 
-      <h2>Demos from event 3</h2>
-      <table>
-        <tr>
-          <td>Light and shadow interfaces</td>
-          <td>Derrek Chow</td>
-        </tr>
-        <tr>
-          <td>Reverse engineering chatgpt</td>
-          <td>Kishan Bagaria</td>
-        </tr>
-        <tr>
-          <td>Silly pet game</td>
-          <td>Kathy Zheng</td>
-        </tr>
-        <tr>
-          <td>AI quilt</td>
-          <td>Michelle V</td>
-        </tr>
-        <tr>
-          <td>A social network for your room</td>
-          <td>Elliott Etzkorn</td>
-        </tr>
-      </table>
+        <h2>Demos from event 3</h2>
+        <table>
+            <tr>
+                <td>Light and shadow interfaces</td>
+                <td>Derrek Chow</td>
+            </tr>
+            <tr>
+                <td>Reverse engineering chatgpt</td>
+                <td>Kishan Bagaria</td>
+            </tr>
+            <tr>
+                <td>Silly pet game</td>
+                <td>Kathy Zheng</td>
+            </tr>
+            <tr>
+                <td>AI quilt</td>
+                <td>Michelle V</td>
+            </tr>
+            <tr>
+                <td>A social network for your room</td>
+                <td>Elliott Etzkorn</td>
+            </tr>
+        </table>
 
-      <p>---</p>
-      <p>
-        Does this design offend your eyes?
-        <a href="https://github.com/Demos-Chill/demoschill.github.io"
-          >Edit me!</a
-        >
-      </p>
-      <p>
-        Would you like to sponsor the event?
-        <a href="https://twitter.com/zhayitong">DM me!</a>
-      </p>
+        <p>---</p>
+        <p>
+            Does this design offend your eyes?
+            <a href="https://github.com/Demos-Chill/demoschill.github.io">Edit me!</a>
+        </p>
+        <p>
+            Would you like to sponsor the event?
+            <a href="https://twitter.com/zhayitong">DM me!</a>
+        </p>
     </main>
-  </body>
+</body>
+
 </html>
