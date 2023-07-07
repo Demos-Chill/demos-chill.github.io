@@ -21,11 +21,17 @@
         max-width: 488px;
     }
 
-    @media (max-width: 600px) {
-        main {
-            padding: 0 16px;
-            /* Add horizontal padding to provide space on smaller screens */
-        }
+    h2 {
+        display: flex;
+        margin-block-start: 1.75em;
+    }
+
+    h2:after {
+        content: '';
+        flex: 1;
+        margin: auto .5em;
+        height: 0;
+        border-top: dotted #ccc 1px;
     }
 
     table {
@@ -49,6 +55,13 @@
         text-align: center;
         padding: 8px 4px;
         pointer-events: auto;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            padding: 0 16px;
+            /* Add horizontal padding to provide space on smaller screens */
+        }
     }
 </style>
 
