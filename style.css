@@ -32,6 +32,7 @@ td:last-child {
     text-align: right;
 }
 
+/* Moving marquee that freeze on hover */
 .marquee-y {
     position: fixed;
     width: 100%;
@@ -49,7 +50,7 @@ td:last-child {
     pointer-events: auto;
 }
 
-
+/* Produces images on hover for each event heading */
 .image-container {
   position: relative;
   text-align: center;
@@ -82,9 +83,9 @@ td:last-child {
   border-radius: 100%;
 }
 
+/* No horizontal overflow on mobile */
 @media (max-width: 600px) {
     main {
         padding: 0 16px;
-        /* Add horizontal padding to provide space on smaller screens */
     }
 }

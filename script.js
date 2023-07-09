@@ -1,3 +1,4 @@
+/* Cycle through a few pics per event heading */
 const eventHeadings = document.querySelectorAll('.event-heading');
 
 const imageUrlsByHeading = {
