@@ -1,0 +1,99 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+main,
+img {
+    width: 100%;
+    max-width: 488px;
+}
+
+h2 {
+    display: flex;
+    margin-block-start: 1.75em;
+}
+
+h2:after {
+    content: '';
+    flex: 1;
+    margin: auto .5em;
+    height: 0;
+    border-top: dotted #ccc 1px;
+}
+
+table {
+    width: 100%;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+/* Moving marquee that freeze on hover */
+.marquee-y {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.marquee-inner {
+    background-color: greenyellow;
+    width: fit-content;
+    font-size: 1.15rem;
+    text-align: center;
+    padding: 8px 12px;
+    pointer-events: auto;
+}
+
+/* Produces images on hover for each event heading */
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.event-heading, &:visited {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: greenyellow;
+    text-decoration-line: underline;
+    text-decoration-thickness: .05em;
+    text-underline-offset: .25em;
+    cursor: cell;
+}
+
+.event-heading:hover {
+    color: blue;
+    text-decoration-color: blue;
+    transition: 160ms linear all;
+}
+
+.event-image {
+  position: absolute;
+  display: none;
+  left: 10em;
+  bottom: 1em;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+}
+
+/* No horizontal overflow on mobile */
+@media (max-width: 600px) {
+    main {
+        padding: 0 16px;
+    }
+
+    .event-image {
+        bottom: 4rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+    }
+}

@@ -6,55 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demos & Chill</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-<style>
-    body {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 32px 0;
-    }
-
-    main,
-    img {
-        width: 100%;
-        max-width: 488px;
-    }
-
-    @media (max-width: 600px) {
-        main {
-            padding: 0 16px;
-            /* Add horizontal padding to provide space on smaller screens */
-        }
-    }
-
-    table {
-        width: 100%;
-    }
-
-    td:last-child {
-        text-align: right;
-    }
-
-    .marquee-y {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-    }
-
-    .marquee-inner {
-        background-color: greenyellow;
-        width: 320px;
-        text-align: center;
-        padding: 8px 4px;
-        pointer-events: auto;
-    }
-</style>
 
 <body>
-    <marquee direction="down" behavior="alternate" class="marquee-y">
-        <marquee behavior="alternate" class="marquee-x">
+    <marquee direction="down" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();"
+        class="marquee-y">
+        <marquee behavior="alternate" class="marquee-x" onmouseover="this.stop();" onmouseout="this.start();">
             <div class="marquee-inner">
                 Demos & Chill 4 is on July 13th.
                 <a href="https://partiful.com/e/nyJQXOfiaeMr6dAoeTkq">Sign up now!</a>
@@ -64,13 +23,20 @@
 
     <main>
         <img src="baddrawing.svg" alt="stick figures demo'ing" />
-        <h2>Demos & Chill</h2>
+        <h1>Demos & Chill</h1>
         <p>
             Is a small event series put on by a group of friends,
             once-a-month-or-two-ish, where people come show off cool stuff they've
             made.
         </p>
-        <h2>Demos from event 1</h2>
+
+        <a href="javascript:void(0)" class="event-heading" data-heading="Demos from event 1">
+            <h2>Demos from event 1</h2>
+            <div class="image-container">
+                <img src="" alt="Images from event 1" class="event-image">
+            </div>
+        </a>
+
         <table>
             <tr>
                 <td>Documentary</td>
@@ -102,7 +68,13 @@
             </tr>
         </table>
 
-        <h2>Demos from event 2</h2>
+        <a href="javascript:void(0)" class="event-heading" data-heading="Demos from event 2">
+            <h2>Demos from event 2</h2>
+            <div class="image-container">
+                <img src="" alt="Images from event 2" class="event-image">
+            </div>
+        </a>
+
         <table>
             <tr>
                 <td>Playbit</td>
@@ -134,7 +106,13 @@
             </tr>
         </table>
 
-        <h2>Demos from event 3</h2>
+        <a href="javascript:void(0)" class="event-heading" data-heading="Demos from event 3">
+            <h2>Demos from event 3</h2>
+            <div class="image-container">
+                <img src="" alt="Images from event 3" class="event-image">
+            </div>
+        </a>
+
         <table>
             <tr>
                 <td>Light and shadow interfaces</td>
