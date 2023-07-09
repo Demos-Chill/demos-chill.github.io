@@ -12,12 +12,11 @@ let intervalId;
 
 hoverLink.addEventListener('mouseover', () => {
   hoverImage.style.display = 'block';
-  intervalId = setInterval(cycleImages, 1000); // Change image every 1 second (adjust the interval as needed)
+  intervalId = setInterval(cycleImages, 1000);
 });
 
 hoverLink.addEventListener('mouseout', () => {
   hoverImage.style.display = 'none';
-  clearInterval(intervalId); // Stop the image cycling
 });
 
 function cycleImages() {
@@ -25,5 +24,4 @@ function cycleImages() {
   currentIndex = (currentIndex + 1) % imageUrls.length;
 }
 
-// Set initial image
 hoverImage.src = imageUrls[0];
