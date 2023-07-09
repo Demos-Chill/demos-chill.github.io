@@ -48,33 +48,6 @@ td:last-child {
     pointer-events: auto;
 }
 
-
-
-/*
-.test-container {
-    position: relative;
-    display: inline-block;
-  }
-
-  .test-image {
-    position: absolute;
-    top: -14rem;
-    left: 100%;
-    display: none;
-    max-width: 24rem;
-    left: 12rem;
-    width: auto;
-    height: auto;
-    border-radius: 100%;
-  }
-
-  .demo-heading:hover + .test-image {
-    display: block;
-  }
-*/
-
-
-
 .image-container {
   position: relative;
   text-align: center;
