@@ -53,6 +53,22 @@ td:last-child {
   text-align: center;
 }
 
+.hover-link, &:visited {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: greenyellow;
+    text-decoration-line: underline;
+    text-decoration-thickness: .05em;
+    text-underline-offset: .25em;
+}
+
+.hover-link:hover {
+    color: blue;
+    text-decoration-color: blue;
+    transition: 160ms linear all;
+}
+
 .hover-image {
   position: absolute;
   display: none;
