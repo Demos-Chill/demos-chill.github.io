@@ -1,27 +1,46 @@
-const hoverLink = document.querySelector('.hover-link');
-const hoverImage = document.querySelector('.hover-image');
+const eventHeadings = document.querySelectorAll('.event-heading');
 
-const imageUrls = [
-  "https://pbs.twimg.com/media/Ft69ztLaMAAKwPv?format=jpg",
-  "https://pbs.twimg.com/media/F0YTB08aQAAzi6X?format=jpg",
-  "https://pbs.twimg.com/media/F0YS4-IaMAAmOUq?format=jpg",
-  "https://pbs.twimg.com/media/F0YS91nakAA3Vy2?format=jpg"
-];
-let currentIndex = 0;
-let intervalId;
+const imageUrlsByHeading = {
+  "Demos from event 1": [
+    "https://pbs.twimg.com/media/Ft692fuaYAAuIWD?format=jpg",
+    "https://pbs.twimg.com/media/FouazKfakAI6wuV?format=jpg",
+    "https://pbs.twimg.com/media/Ft694jMaYAA47k6?format=jpg",
+    "https://pbs.twimg.com/media/Ft697J6XwAcbU6n?format=jpg"
+  ],
+  "Demos from event 2": [
+    "https://pbs.twimg.com/media/Ft69ztLaMAAKwPv?format=jpg",
+    "https://pbs.twimg.com/media/Ft69zKOaUAAS7dW?format=jpg",
+    "https://pbs.twimg.com/media/Ft690LMXwAMWil4?format=jpg",
+    "https://pbs.twimg.com/media/Ft690snaIAAeRPK?format=jpg"
+  ],
+  "Demos from event 3": [
+    "https://pbs.twimg.com/media/FvVhD8UaEAAg65h?format=jpg",
+  ]
+};
 
-hoverLink.addEventListener('mouseover', () => {
-  hoverImage.style.display = 'block';
-  intervalId = setInterval(cycleImages, 1000);
+eventHeadings.forEach((eventHeading) => {
+  const eventImage = eventHeading.querySelector('.event-image');
+  const heading = eventHeading.getAttribute('data-heading');
+  const imageUrls = imageUrlsByHeading[heading];
+
+  let currentIndex = 0;
+  let intervalId;
+
+  eventHeading.addEventListener('mouseover', () => {
+    eventImage.style.display = 'block';
+    intervalId = setInterval(cycleImages, 1000); // Change image every 1 second (adjust the interval as needed)
+  });
+
+  eventHeading.addEventListener('mouseout', () => {
+    eventImage.style.display = 'none';
+    clearInterval(intervalId); // Stop the image cycling
+  });
+
+  function cycleImages() {
+    eventImage.src = imageUrls[currentIndex];
+    currentIndex = (currentIndex + 1) % imageUrls.length;
+  }
+
+  // Set initial image
+  eventImage.src = imageUrls[0];
 });
-
-hoverLink.addEventListener('mouseout', () => {
-  hoverImage.style.display = 'none';
-});
-
-function cycleImages() {
-  hoverImage.src = imageUrls[currentIndex];
-  currentIndex = (currentIndex + 1) % imageUrls.length;
-}
-
-hoverImage.src = imageUrls[0];
