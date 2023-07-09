@@ -14,7 +14,10 @@ const imageUrlsByHeading = {
     "https://pbs.twimg.com/media/Ft690snaIAAeRPK?format=jpg"
   ],
   "Demos from event 3": [
-    "https://pbs.twimg.com/media/FvVhD8UaEAAg65h?format=jpg",
+    "https://pbs.twimg.com/media/F0oX4efakAEMf5A?format=jpg",
+    "https://pbs.twimg.com/media/F0oX4efacAE6ICv?format=jpg",
+    "https://pbs.twimg.com/media/F0oX4eeaAAASwpD?format=jpg",
+    "https://pbs.twimg.com/media/F0oX4eeacAAiyB5?format=jpg"
   ]
 };
 
