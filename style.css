@@ -88,4 +88,12 @@ td:last-child {
     main {
         padding: 0 16px;
     }
+
+    .event-image {
+        bottom: 4rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+    }
 }
