@@ -42,9 +42,10 @@ td:last-child {
 
 .marquee-inner {
     background-color: greenyellow;
-    width: 320px;
+    width: fit-content;
+    font-size: 1.15rem;
     text-align: center;
-    padding: 8px 4px;
+    padding: 8px 12px;
     pointer-events: auto;
 }
 
@@ -62,6 +63,7 @@ td:last-child {
     text-decoration-line: underline;
     text-decoration-thickness: .05em;
     text-underline-offset: .25em;
+    cursor: cell;
 }
 
 .event-heading:hover {
