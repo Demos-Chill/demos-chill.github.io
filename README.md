@@ -1,5 +1,11 @@
-# Demos & Chill website
+# Demos & Chill
 
-Feel free to edit me as you'd like. Please try to make it more interesting than good :P
+[Demos][website] is a small event series in San Francisco put on by a group of friends, once-a-month-or-two-ish, where people interested in doing creative things with technology show off cool stuff they've made.
 
-https://demos-chill.github.io/
+Designers, engineers, makers of all stripes welcome! The idea is to keep the scope of these meetups relatively open as a lot of the most interesting things are at the boundary of disciplines.
+
+## Contributions
+
+Feel free to edit as you'd like. Please try to make it more interesting than good :P
+
+[website]: https://demos-chill.github.io/
