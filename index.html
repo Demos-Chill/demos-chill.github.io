@@ -6,123 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demos & Chill</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
+
   <body>
-    <marquee direction="down" behavior="alternate" class="marquee-y">
-      <marquee behavior="alternate" class="marquee-x">
+    <marquee
+      direction="down"
+      behavior="alternate"
+      onmouseover="this.stop();"
+      onmouseout="this.start();"
+      class="marquee-y"
+    >
+      <marquee
+        behavior="alternate"
+        class="marquee-x"
+        onmouseover="this.stop();"
+        onmouseout="this.start();"
+      >
         <div class="marquee-inner">
-          Demos & Chill 4 is on July 13th. <a href="https://partiful.com/e/nyJQXOfiaeMr6dAoeTkq">Sign up now!</a>
+          Demos & Chill 4 is on July 13th.
+          <a href="https://partiful.com/e/nyJQXOfiaeMr6dAoeTkq">Sign up now!</a>
         </div>
       </marquee>
     </marquee>
 
     <main>
       <img src="baddrawing.svg" alt="stick figures demo'ing" />
-      <h2>Demos & Chill</h2>
+      <h1>Demos & Chill</h1>
       <p>
         Is a small event series put on by a group of friends,
         once-a-month-or-two-ish, where people come show off cool stuff they've
         made.
       </p>
-      <h2>Demos from event 1</h2>
-      <table>
-        <tr>
-          <td>Documentary</td>
-          <td>Prince Boucher</td>
-        </tr>
-        <tr>
-          <td>Poetry Camera</td>
-          <td>Carolyn Zhang and Ryan Mather</td>
-        </tr>
-        <tr>
-          <td>A Farsi Typeface</td>
-          <td>Omar Mohammad</td>
-        </tr>
-        <tr>
-          <td>Super Wide Interfaces</td>
-          <td>Gray Crawford</td>
-        </tr>
-        <tr>
-          <td>Bill Splitting Smart Contract</td>
-          <td>James Magahern</td>
-        </tr>
-        <tr>
-          <td>Cheating at Solitaire</td>
-          <td>Charles Magahern & Friend</td>
-        </tr>
-        <tr>
-          <td>Midnight Animation Tips</td>
-          <td>Marisa Lu</td>
-        </tr>
-      </table>
+      <section>
+        <img src="image/cat1.png" class="cat" alt="cute cat!" />
 
-      <h2>Demos from event 2</h2>
-      <table>
-        <tr>
-          <td>Playbit</td>
-          <td>Rasmus Andersson</td>
-        </tr>
-        <tr>
-          <td>A Personal Journaling App</td>
-          <td>Brendan Aronoff</td>
-        </tr>
-        <tr>
-          <td>Reprocessing</td>
-          <td>Benjamin San Souci</td>
-        </tr>
-        <tr>
-          <td>Shaders & CSS</td>
-          <td>Cheng Lou</td>
-        </tr>
-        <tr>
-          <td>Audio Book Notes</td>
-          <td>Andy Matuschak</td>
-        </tr>
-        <tr>
-          <td>Clippy for Research Papers</td>
-          <td>Sean Grove</td>
-        </tr>
-        <tr>
-          <td>Auto Carbon Offset Truck</td>
-          <td>Kane Hsieh</td>
-        </tr>
-      </table>
-
-      <h2>Demos from event 3</h2>
-      <table>
-        <tr>
-          <td>Light and shadow interfaces</td>
-          <td>Derrek Chow</td>
-        </tr>
-        <tr>
-          <td>Reverse engineering chatgpt</td>
-          <td>Kishan Bagaria</td>
-        </tr>
-        <tr>
-          <td>Silly pet game</td>
-          <td>Kathy Zheng</td>
-        </tr>
-        <tr>
-          <td>AI quilt</td>
-          <td>Michelle V</td>
-        </tr>
-        <tr>
-          <td>A social network for your room</td>
-          <td>Elliott Etzkorn</td>
-        </tr>
-      </table>
-
-      <p>---</p>
-      <p>
-        Does this design offend your eyes?
-        <a href="https://github.com/Demos-Chill/demoschill.github.io"
-          >Edit me!</a
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 1"
         >
-      </p>
-      <p>
-        Would you like to sponsor the event?
-        <a href="https://twitter.com/zhayitong">DM me!</a>
-      </p>
+          <h2>Demos from event 1</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 1" class="event-image" />
+          </div>
+        </a>
+
+        <table>
+          <tr>
+            <td>Documentary</td>
+            <td>Prince Boucher</td>
+          </tr>
+          <tr>
+            <td>Poetry Camera</td>
+            <td>Carolyn Zhang and Ryan Mather</td>
+          </tr>
+          <tr>
+            <td>A Farsi Typeface</td>
+            <td>Omar Mohammad</td>
+          </tr>
+          <tr>
+            <td>Super Wide Interfaces</td>
+            <td>Gray Crawford</td>
+          </tr>
+          <tr>
+            <td>Bill Splitting Smart Contract</td>
+            <td>James Magahern</td>
+          </tr>
+          <tr>
+            <td>Cheating at Solitaire</td>
+            <td>Charles Magahern & Friend</td>
+          </tr>
+          <tr>
+            <td>Midnight Animation Tips</td>
+            <td>Marisa Lu</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat2.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 2"
+        >
+          <h2>Demos from event 2</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 2" class="event-image" />
+          </div>
+        </a>
+
+        <table>
+          <tr>
+            <td>Playbit</td>
+            <td>Rasmus Andersson</td>
+          </tr>
+          <tr>
+            <td>A Personal Journaling App</td>
+            <td>Brendan Aronoff</td>
+          </tr>
+          <tr>
+            <td>Reprocessing</td>
+            <td>Benjamin San Souci</td>
+          </tr>
+          <tr>
+            <td>Shaders & CSS</td>
+            <td>Cheng Lou</td>
+          </tr>
+          <tr>
+            <td>Audio Book Notes</td>
+            <td>Andy Matuschak</td>
+          </tr>
+          <tr>
+            <td>Clippy for Research Papers</td>
+            <td>Sean Grove</td>
+          </tr>
+          <tr>
+            <td>Auto Carbon Offset Truck</td>
+            <td>Kane Hsieh</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <img src="image/cat3.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 3"
+        >
+          <h2>Demos from event 3</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 3" class="event-image" />
+          </div>
+        </a>
+
+        <table>
+          <tr>
+            <td>Light and shadow interfaces</td>
+            <td>Derrek Chow</td>
+          </tr>
+          <tr>
+            <td>Reverse engineering chatgpt</td>
+            <td>Kishan Bagaria</td>
+          </tr>
+          <tr>
+            <td>Silly pet game</td>
+            <td>Kathy Zheng</td>
+          </tr>
+          <tr>
+            <td>AI quilt</td>
+            <td>Michelle V</td>
+          </tr>
+          <tr>
+            <td>A social network for your room</td>
+            <td>Elliott Etzkorn</td>
+          </tr>
+        </table>
+      </section>
+      <footer>
+        <p>---</p>
+        <p>
+          Does this design offend your eyes?
+          <a href="https://github.com/Demos-Chill/demoschill.github.io"
+            >Edit me!</a
+          >
+        </p>
+        <p>
+          Would you like to sponsor the event?
+          <a href="https://twitter.com/zhayitong">DM me!</a>
+        </p>
+      </footer>
     </main>
   </body>
 </html>

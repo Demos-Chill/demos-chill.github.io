@@ -8,4 +8,4 @@ Designers, engineers, makers of all stripes welcome! The idea is to keep the sco
 
 Feel free to edit as you'd like. Please try to make it more interesting than good :P
 
-[website]: https://demos-chill.github.io/
+Check it out here: [demos.club](https://demos.club)
