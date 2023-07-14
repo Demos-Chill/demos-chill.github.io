@@ -51,7 +51,7 @@ td:last-child {
 }
 
 .marquee-inner {
-    background-color: greenyellow;
+    background-color: rgb(250, 177, 104);
     width: fit-content;
     font-size: 1.15rem;
     text-align: center;
@@ -69,7 +69,7 @@ td:last-child {
     color: inherit;
     text-decoration: underline;
     text-decoration-style: wavy;
-    text-decoration-color: greenyellow;
+    text-decoration-color: rgb(250, 177, 104);
     text-decoration-line: underline;
     text-decoration-thickness: .05em;
     text-underline-offset: .25em;
