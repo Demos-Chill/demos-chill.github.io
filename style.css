@@ -14,6 +14,10 @@ main {
     width: 100%;
 }
 
+.event-image {
+    max-width: 488px;   
+}
+
 .header {
     display: grid;
     grid-template-columns: auto 1fr;
