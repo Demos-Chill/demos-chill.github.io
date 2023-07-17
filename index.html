@@ -237,7 +237,21 @@
         </p>
       </footer>
     </main>
+    <div id="cursor-chat-layer">
+      <input type="text" id="cursor-chat-box" />
+    </div>
+    <!-- install playhtml -->
     <script type="module" src="https://unpkg.com/playhtml"></script>
     <link rel="stylesheet" href="https://unpkg.com/playhtml/dist/style.css" />
+    <!-- install cursor chat -->
+    <script type="module">
+      import { initCursorChat } from "https://esm.sh/cursor-chat";
+      initCursorChat(window.location.href);
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/cursor-chat/dist/style.css"
+    />
   </body>
 </html>
