@@ -5,8 +5,64 @@ body {
     margin: 32px 0;
 }
 
-main,
-img {
+main {
+    position: relative;
+}
+
+.header-image {
+    transform: scaleX(-1);
+    width: 100%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#hanging-noguchi {
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+#akari-noguchi {
+    float:right;
+    margin-top: -40px;
+}
+
+.lamp {
+    width: 80px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.lamp:hover {
+    animation: jiggle 0.5s ease-in-out;
+}
+
+.lamp.clicked {
+    filter: brightness(1.2) saturate(1.6)
+    drop-shadow(0px 0px 50px rgba(247, 220, 156, 0.85));
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+main {
     width: 100%;
     max-width: 488px;
 }

@@ -23,15 +23,33 @@
         onmouseover="this.stop();"
         onmouseout="this.start();"
       >
-        <div class="marquee-inner">
-          Demos & Chill 5 coming soon!
-        </div>
+        <div class="marquee-inner">Demos & Chill 5 coming soon!</div>
       </marquee>
     </marquee>
 
     <main>
-      <img src="baddrawing.svg" alt="stick figures demo'ing" />
+      <div class="header">
+        <img
+          id="hanging-noguchi"
+          src="image/noguchi-hanging-lamp.png"
+          alt="a transparent cutout of a hanging Noguchi lamp."
+          class="lamp"
+          can-toggle
+        />
+        <img
+          src="baddrawing.svg"
+          alt="stick figures demo'ing"
+          class="header-image"
+        />
+      </div>
       <h1>Demos & Chill</h1>
+      <img
+        id="akari-noguchi"
+        src="image/noguchi-akari-a1.png"
+        alt="a transparent cutout of the Noguchi Akari lamp."
+        class="lamp"
+        can-toggle
+      />
       <p>
         Is a small event series put on by a group of friends,
         once-a-month-or-two-ish, where people come show off cool stuff they've
@@ -219,5 +237,7 @@
         </p>
       </footer>
     </main>
+    <script type="module" src="https://unpkg.com/playhtml"></script>
+    <link rel="stylesheet" href="https://unpkg.com/playhtml/dist/style.css" />
   </body>
 </html>
