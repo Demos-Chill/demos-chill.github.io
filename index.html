@@ -1,562 +1,517 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Demos & Chill</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demos & Chill</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-    <body>
-        <marquee
-            direction="down"
-            behavior="alternate"
-            onmouseover="this.stop();"
-            onmouseout="this.start();"
-            class="marquee-y"
+  <body>
+    <marquee
+      direction="down"
+      behavior="alternate"
+      onmouseover="this.stop();"
+      onmouseout="this.start();"
+      class="marquee-y"
+    >
+      <marquee
+        behavior="alternate"
+        class="marquee-x"
+        onmouseover="this.stop();"
+        onmouseout="this.start();"
+      >
+        <div class="marquee-inner">Demos & Chill 12 coming soon!</div>
+      </marquee>
+    </marquee>
+
+    <main>
+      <div class="header">
+        <img
+          id="hanging-noguchi"
+          src="image/noguchi-hanging-lamp.png"
+          alt="a transparent cutout of a hanging Noguchi lamp."
+          class="lamp"
+          can-toggle
+        />
+        <img
+          src="baddrawing.svg"
+          alt="stick figures demo'ing"
+          class="header-image"
+        />
+      </div>
+      <h1>Demos & Chill</h1>
+      <img
+        id="akari-noguchi"
+        src="image/noguchi-akari-a1.png"
+        alt="a transparent cutout of the Noguchi Akari lamp."
+        class="lamp"
+        can-toggle
+      />
+      <p>
+        Is a small event series put on by a group of friends,
+        once-a-month-or-two-ish, where people come show off cool stuff they've
+        made.
+      </p>
+      <section>
+        <img src="image/cat2.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 11"
         >
-            <marquee
-                behavior="alternate"
-                class="marquee-x"
-                onmouseover="this.stop();"
-                onmouseout="this.start();"
-            >
-                <div class="marquee-inner">Demos & Chill 12 coming soon!</div>
-            </marquee>
-        </marquee>
+          <h2>Demos from event 11</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 11" class="event-image" />
+          </div>
+        </a>
 
-        <main>
-            <div class="header">
-                <img
-                    id="hanging-noguchi"
-                    src="image/noguchi-hanging-lamp.png"
-                    alt="a transparent cutout of a hanging Noguchi lamp."
-                    class="lamp"
-                    can-toggle
-                />
-                <img
-                    src="baddrawing.svg"
-                    alt="stick figures demo'ing"
-                    class="header-image"
-                />
-            </div>
-            <h1>Demos & Chill</h1>
-            <img
-                id="akari-noguchi"
-                src="image/noguchi-akari-a1.png"
-                alt="a transparent cutout of the Noguchi Akari lamp."
-                class="lamp"
-                can-toggle
-            />
-            <p>
-                Is a small event series put on by a group of friends,
-                once-a-month-or-two-ish, where people come show off cool stuff
-                they've made.
-            </p>
-            <section>
-                <img src="image/cat2.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 11"
-                >
-                    <h2>Demos from event 11</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 11"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Chinese flashcard generator</td>
+            <td>Zodi Chalat</td>
+          </tr>
+          <tr>
+            <td>Sun lamps</td>
+            <td>Harrison Lin</td>
+          </tr>
+          <tr>
+            <td>Maximum number of sets</td>
+            <td>Duncan Wilson</td>
+          </tr>
+          <tr>
+            <td>A short film about travel</td>
+            <td>Donald Jewkes</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat1.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 10"
+        >
+          <h2>Demos from event 10</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 10" class="event-image" />
+          </div>
+        </a>
 
-                <table>
-                    <tr>
-                        <td>Chinese flashcard generator</td>
-                        <td>Zodi Chalat</td>
-                    </tr>
-                    <tr>
-                        <td>Sun lamps</td>
-                        <td>Harrison Lin</td>
-                    </tr>
-                    <tr>
-                        <td>Maximum number of sets</td>
-                        <td>Duncan Wilson</td>
-                    </tr>
-                    <tr>
-                        <td>A short film about travel</td>
-                        <td>Donald Jewkes</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <img src="image/cat1.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 10"
-                >
-                    <h2>Demos from event 10</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 10"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Printing movie props</td>
+            <td>Bob Cao</td>
+          </tr>
+          <tr>
+            <td>Mooncake wishes</td>
+            <td>Alice Lee</td>
+          </tr>
+          <tr>
+            <td>Bop Spotter</td>
+            <td>Riley Walz</td>
+          </tr>
+          <tr>
+            <td>Apps for kids</td>
+            <td>Otavio Good</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat9.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 9"
+        >
+          <h2>Demos from event 9</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 9" class="event-image" />
+          </div>
+        </a>
 
-                <table>
-                    <tr>
-                        <td>Printing movie props</td>
-                        <td>Bob Cao</td>
-                    </tr>
-                    <tr>
-                        <td>Mooncake wishes</td>
-                        <td>Alice Lee</td>
-                    </tr>
-                    <tr>
-                        <td>Bop Spotter</td>
-                        <td>Riley Walz</td>
-                    </tr>
-                    <tr>
-                        <td>Apps for kids</td>
-                        <td>Otavio Good</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <img src="image/cat9.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 9"
-                >
-                    <h2>Demos from event 9</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 9"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>New synth!</td>
+            <td>Chris Guichet</td>
+          </tr>
+          <tr>
+            <td>Snake robot</td>
+            <td>Otavio Good</td>
+          </tr>
+          <tr>
+            <td>Oil painting & chill</td>
+            <td>Alice Yang</td>
+          </tr>
+          <tr>
+            <td>AI character design + animation</td>
+            <td>Brendan Milos</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat8.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 8"
+        >
+          <h2>Demos from event 8</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 8" class="event-image" />
+          </div>
+        </a>
 
-                <table>
-                    <tr>
-                        <td>New synth!</td>
-                        <td>Chris Guichet</td>
-                    </tr>
-                    <tr>
-                        <td>Snake robot</td>
-                        <td>Otavio Good</td>
-                    </tr>
-                    <tr>
-                        <td>Oil painting & chill</td>
-                        <td>Alice Yang</td>
-                    </tr>
-                    <tr>
-                        <td>AI character design + animation</td>
-                        <td>Brendan Milos</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <img src="image/cat8.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 8"
-                >
-                    <h2>Demos from event 8</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 8"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Smart watch for chess ranking</td>
+            <td>David Valdman</td>
+          </tr>
+          <tr>
+            <td>Miegakura related stuff</td>
+            <td>Marc ten Bosch</td>
+          </tr>
+          <tr>
+            <td>AI Drawn Card deck</td>
+            <td>Marisa Lu</td>
+          </tr>
+          <tr>
+            <td>How to make film with AI</td>
+            <td>Anthony Tan</td>
+          </tr>
+          <tr>
+            <td>Ads of San Francisco</td>
+            <td>Bill Dybas</td>
+          </tr>
+          <tr>
+            <td>Livestreaming and recording hardware</td>
+            <td>Osebo</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat7.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 7"
+        >
+          <h2>Demos from event 7</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 7" class="event-image" />
+          </div>
+        </a>
 
-                <table>
-                    <tr>
-                        <td>Smart watch for chess ranking</td>
-                        <td>David Valdman</td>
-                    </tr>
-                    <tr>
-                        <td>Miegakura related stuff</td>
-                        <td>Marc ten Bosch</td>
-                    </tr>
-                    <tr>
-                        <td>AI Drawn Card deck</td>
-                        <td>Marisa Lu</td>
-                    </tr>
-                    <tr>
-                        <td>How to make film with AI</td>
-                        <td>Anthony Tan</td>
-                    </tr>
-                    <tr>
-                        <td>Ads of San Francisco</td>
-                        <td>Bill Dybas</td>
-                    </tr>
-                    <tr>
-                        <td>Livestreaming and recording hardware</td>
-                        <td>Osebo</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <img src="image/cat7.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 7"
-                >
-                    <h2>Demos from event 7</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 7"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Circuit Sculpture</td>
+            <td>Mohit Bhoite</td>
+          </tr>
+          <tr>
+            <td>3D Medley</td>
+            <td>Jonathan Selstad</td>
+          </tr>
+          <tr>
+            <td>Envisioning Generative OSs</td>
+            <td>Gray Crawford</td>
+          </tr>
+          <tr>
+            <td>Dissecting magic eyes</td>
+            <td>Ryan Hileman</td>
+          </tr>
+          <tr>
+            <td>AI Podcast</td>
+            <td>Benjamin Lim</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat6.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 6"
+        >
+          <h2>Demos from event 6</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 6" class="event-image" />
+          </div>
+        </a>
 
-                <table>
-                    <tr>
-                        <td>Circuit Sculpture</td>
-                        <td>Mohit Bhoite</td>
-                    </tr>
-                    <tr>
-                        <td>3D Medley</td>
-                        <td>Jonathan Selstad</td>
-                    </tr>
-                    <tr>
-                        <td>Envisioning Generative OSs</td>
-                        <td>Gray Crawford</td>
-                    </tr>
-                    <tr>
-                        <td>Dissecting magic eyes</td>
-                        <td>Ryan Hileman</td>
-                    </tr>
-                    <tr>
-                        <td>AI Podcast</td>
-                        <td>Benjamin Lim</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <img src="image/cat6.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 6"
-                >
-                    <h2>Demos from event 6</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 6"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Slices of a book</td>
+            <td>Andy Matuschak & Derrek Chow</td>
+          </tr>
+          <tr>
+            <td>Retro horror game</td>
+            <td>Henry Quoc Tran</td>
+          </tr>
+          <tr>
+            <td>Stochastic parrot</td>
+            <td>Kevin Kwok</td>
+          </tr>
+          <tr>
+            <td>AI Super Smash Coach</td>
+            <td>Nathan Waters</td>
+          </tr>
+          <tr>
+            <td>Wedding design</td>
+            <td>Noah Levin</td>
+          </tr>
+          <tr>
+            <td>Github-based notetaking app</td>
+            <td>Cole Bemis</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat5.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 5"
+        >
+          <h2>Demos from event 5</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 5" class="event-image" />
+          </div>
+        </a>
 
-                <table>
-                    <tr>
-                        <td>Slices of a book</td>
-                        <td>Andy Matuschak & Derrek Chow</td>
-                    </tr>
-                    <tr>
-                        <td>Retro horror game</td>
-                        <td>Henry Quoc Tran</td>
-                    </tr>
-                    <tr>
-                        <td>Stochastic parrot</td>
-                        <td>Kevin Kwok</td>
-                    </tr>
-                    <tr>
-                        <td>AI Super Smash Coach</td>
-                        <td>Nathan Waters</td>
-                    </tr>
-                    <tr>
-                        <td>Wedding design</td>
-                        <td>Noah Levin</td>
-                    </tr>
-                    <tr>
-                        <td>Github-based notetaking app</td>
-                        <td>Cole Bemis</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <img src="image/cat5.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 5"
-                >
-                    <h2>Demos from event 5</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 5"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Prayer App</td>
+            <td>Omar Mohammad</td>
+          </tr>
+          <tr>
+            <td>The making of Orion</td>
+            <td>Sebastiaan De With</td>
+          </tr>
+          <tr>
+            <td>Superwide interfaces 2</td>
+            <td>Gray Crawford</td>
+          </tr>
+          <tr>
+            <td>New interfaces for dynamic images over text</td>
+            <td>Matthew Siu ft Melisa</td>
+          </tr>
+          <tr>
+            <td>Space toilets</td>
+            <td>Oliver Zhang</td>
+          </tr>
+          <tr>
+            <td>Find your spirit tree</td>
+            <td>Mathew Anthony</td>
+          </tr>
+          <tr>
+            <td>AI sneaker brand</td>
+            <td>Yasly</td>
+          </tr>
+        </table>
+      </section>
 
-                <table>
-                    <tr>
-                        <td>Prayer App</td>
-                        <td>Omar Mohammad</td>
-                    </tr>
-                    <tr>
-                        <td>The making of Orion</td>
-                        <td>Sebastiaan De With</td>
-                    </tr>
-                    <tr>
-                        <td>Superwide interfaces 2</td>
-                        <td>Gray Crawford</td>
-                    </tr>
-                    <tr>
-                        <td>New interfaces for dynamic images over text</td>
-                        <td>Matthew Siu ft Melisa</td>
-                    </tr>
-                    <tr>
-                        <td>Space toilets</td>
-                        <td>Oliver Zhang</td>
-                    </tr>
-                    <tr>
-                        <td>Find your spirit tree</td>
-                        <td>Mathew Anthony</td>
-                    </tr>
-                    <tr>
-                        <td>AI sneaker brand</td>
-                        <td>Yasly</td>
-                    </tr>
-                </table>
-            </section>
+      <section>
+        <img src="image/cat4.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 4"
+        >
+          <h2>Demos from event 4</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 4" class="event-image" />
+          </div>
+        </a>
 
-            <section>
-                <img src="image/cat4.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 4"
-                >
-                    <h2>Demos from event 4</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 4"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Figma computer</td>
+            <td>Willy Wu</td>
+          </tr>
+          <tr>
+            <td>playhtml</td>
+            <td>Spencer Chang</td>
+          </tr>
+          <tr>
+            <td>Buffo - a documentary</td>
+            <td>Donald Jewkes</td>
+          </tr>
+          <tr>
+            <td>Tamagotchi spongey</td>
+            <td>Corey</td>
+          </tr>
+          <tr>
+            <td>Wiggly Synth</td>
+            <td>Chris (Sound Werkshop)</td>
+          </tr>
+          <tr>
+            <td>AI Photobooth</td>
+            <td>Yasyf Mohamedali</td>
+          </tr>
+        </table>
+      </section>
 
-                <table>
-                    <tr>
-                        <td>Figma computer</td>
-                        <td>Willy Wu</td>
-                    </tr>
-                    <tr>
-                        <td>playhtml</td>
-                        <td>Spencer Chang</td>
-                    </tr>
-                    <tr>
-                        <td>Buffo - a documentary</td>
-                        <td>Donald Jewkes</td>
-                    </tr>
-                    <tr>
-                        <td>Tamagotchi spongey</td>
-                        <td>Corey</td>
-                    </tr>
-                    <tr>
-                        <td>Wiggly Synth</td>
-                        <td>Chris (Sound Werkshop)</td>
-                    </tr>
-                    <tr>
-                        <td>AI Photobooth</td>
-                        <td>Yasyf Mohamedali</td>
-                    </tr>
-                </table>
-            </section>
+      <section>
+        <img src="image/cat3.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 3"
+        >
+          <h2>Demos from event 3</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 3" class="event-image" />
+          </div>
+        </a>
 
-            <section>
-                <img src="image/cat3.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 3"
-                >
-                    <h2>Demos from event 3</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 3"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Light and shadow interfaces</td>
+            <td>Derrek Chow</td>
+          </tr>
+          <tr>
+            <td>Reverse engineering chatgpt</td>
+            <td>Kishan Bagaria</td>
+          </tr>
+          <tr>
+            <td>Silly pet game</td>
+            <td>Kathy Zheng</td>
+          </tr>
+          <tr>
+            <td>AI quilt</td>
+            <td>Michelle V</td>
+          </tr>
+          <tr>
+            <td>A social network for your room</td>
+            <td>Elliott Etzkorn</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <img src="image/cat2.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 2"
+        >
+          <h2>Demos from event 2</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 2" class="event-image" />
+          </div>
+        </a>
 
-                <table>
-                    <tr>
-                        <td>Light and shadow interfaces</td>
-                        <td>Derrek Chow</td>
-                    </tr>
-                    <tr>
-                        <td>Reverse engineering chatgpt</td>
-                        <td>Kishan Bagaria</td>
-                    </tr>
-                    <tr>
-                        <td>Silly pet game</td>
-                        <td>Kathy Zheng</td>
-                    </tr>
-                    <tr>
-                        <td>AI quilt</td>
-                        <td>Michelle V</td>
-                    </tr>
-                    <tr>
-                        <td>A social network for your room</td>
-                        <td>Elliott Etzkorn</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <img src="image/cat2.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 2"
-                >
-                    <h2>Demos from event 2</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 2"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Playbit</td>
+            <td>Rasmus Andersson</td>
+          </tr>
+          <tr>
+            <td>A Personal Journaling App</td>
+            <td>Brendan Aronoff</td>
+          </tr>
+          <tr>
+            <td>Reprocessing</td>
+            <td>Benjamin San Souci</td>
+          </tr>
+          <tr>
+            <td>Shaders & CSS</td>
+            <td>Cheng Lou</td>
+          </tr>
+          <tr>
+            <td>Audio Book Notes</td>
+            <td>Andy Matuschak</td>
+          </tr>
+          <tr>
+            <td>Clippy for Research Papers</td>
+            <td>Sean Grove</td>
+          </tr>
+          <tr>
+            <td>Auto Carbon Offset Truck</td>
+            <td>Kane Hsieh</td>
+          </tr>
+        </table>
+      </section>
 
-                <table>
-                    <tr>
-                        <td>Playbit</td>
-                        <td>Rasmus Andersson</td>
-                    </tr>
-                    <tr>
-                        <td>A Personal Journaling App</td>
-                        <td>Brendan Aronoff</td>
-                    </tr>
-                    <tr>
-                        <td>Reprocessing</td>
-                        <td>Benjamin San Souci</td>
-                    </tr>
-                    <tr>
-                        <td>Shaders & CSS</td>
-                        <td>Cheng Lou</td>
-                    </tr>
-                    <tr>
-                        <td>Audio Book Notes</td>
-                        <td>Andy Matuschak</td>
-                    </tr>
-                    <tr>
-                        <td>Clippy for Research Papers</td>
-                        <td>Sean Grove</td>
-                    </tr>
-                    <tr>
-                        <td>Auto Carbon Offset Truck</td>
-                        <td>Kane Hsieh</td>
-                    </tr>
-                </table>
-            </section>
+      <section>
+        <img src="image/cat1.png" class="cat" alt="cute cat!" />
 
-            <section>
-                <img src="image/cat1.png" class="cat" alt="cute cat!" />
+        <a
+          href="javascript:void(0)"
+          class="event-heading"
+          data-heading="Demos from event 1"
+        >
+          <h2>Demos from event 1</h2>
+          <div class="image-container">
+            <img src="" alt="Images from event 1" class="event-image" />
+          </div>
+        </a>
 
-                <a
-                    href="javascript:void(0)"
-                    class="event-heading"
-                    data-heading="Demos from event 1"
-                >
-                    <h2>Demos from event 1</h2>
-                    <div class="image-container">
-                        <img
-                            src=""
-                            alt="Images from event 1"
-                            class="event-image"
-                        />
-                    </div>
-                </a>
+        <table>
+          <tr>
+            <td>Documentary</td>
+            <td>Prince Boucher</td>
+          </tr>
+          <tr>
+            <td>Poetry Camera</td>
+            <td>Carolyn Zhang and Ryan Mather</td>
+          </tr>
+          <tr>
+            <td>A Farsi Typeface</td>
+            <td>Omar Mohammad</td>
+          </tr>
+          <tr>
+            <td>Superwide Interfaces</td>
+            <td>Gray Crawford</td>
+          </tr>
+          <tr>
+            <td>Bill Splitting Smart Contract</td>
+            <td>James Magahern</td>
+          </tr>
+          <tr>
+            <td>Cheating at Solitaire</td>
+            <td>Charles Magahern & Friend</td>
+          </tr>
+          <tr>
+            <td>Midnight Animation Tips</td>
+            <td>Marisa Lu</td>
+          </tr>
+        </table>
+      </section>
 
-                <table>
-                    <tr>
-                        <td>Documentary</td>
-                        <td>Prince Boucher</td>
-                    </tr>
-                    <tr>
-                        <td>Poetry Camera</td>
-                        <td>Carolyn Zhang and Ryan Mather</td>
-                    </tr>
-                    <tr>
-                        <td>A Farsi Typeface</td>
-                        <td>Omar Mohammad</td>
-                    </tr>
-                    <tr>
-                        <td>Superwide Interfaces</td>
-                        <td>Gray Crawford</td>
-                    </tr>
-                    <tr>
-                        <td>Bill Splitting Smart Contract</td>
-                        <td>James Magahern</td>
-                    </tr>
-                    <tr>
-                        <td>Cheating at Solitaire</td>
-                        <td>Charles Magahern & Friend</td>
-                    </tr>
-                    <tr>
-                        <td>Midnight Animation Tips</td>
-                        <td>Marisa Lu</td>
-                    </tr>
-                </table>
-            </section>
-
-            <footer>
-                <p>---</p>
-                <p>
-                    Does this design offend your eyes?
-                    <a
-                        href="https://github.com/Demos-Chill/demoschill.github.io"
-                        >Edit me!</a
-                    >
-                </p>
-                <p>
-                    Would you like to sponsor the event?
-                    <a href="https://twitter.com/zhayitong">DM me!</a>
-                </p>
-            </footer>
-        </main>
-        <div id="cursor-chat-layer">
-            <input type="text" id="cursor-chat-box" />
-        </div>
-        <!-- install playhtml -->
-        <script type="module" src="https://unpkg.com/playhtml"></script>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/playhtml/dist/style.css"
-        />
-        <!-- install cursor chat -->
-        <script type="module">
-            import { initCursorChat } from "https://esm.sh/cursor-chat";
-            initCursorChat(window.location.href);
-        </script>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://unpkg.com/cursor-chat/dist/style.css"
-        />
-    </body>
+      <footer>
+        <p>---</p>
+        <p>
+          Does this design offend your eyes?
+          <a href="https://github.com/Demos-Chill/demoschill.github.io"
+            >Edit me!</a
+          >
+        </p>
+        <p>
+          Would you like to sponsor the event?
+          <a href="https://twitter.com/zhayitong">DM me!</a>
+        </p>
+      </footer>
+    </main>
+    <div id="cursor-chat-layer">
+      <input type="text" id="cursor-chat-box" />
+    </div>
+    <!-- install playhtml -->
+    <script
+      type="module"
+      src="https://unpkg.com/playhtml@latest/dist/init.es.js"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/playhtml/dist/style.css" />
+    <!-- install cursor chat -->
+    <script type="module">
+      import { initCursorChat } from "https://esm.sh/cursor-chat";
+      initCursorChat(window.location.href);
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/cursor-chat/dist/style.css"
+    />
+  </body>
 </html>
