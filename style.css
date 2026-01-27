@@ -1,3 +1,7 @@
+/* ===================================
+   BASE STYLES
+   =================================== */
+
 body {
     width: 100%;
     display: flex;
@@ -7,7 +11,34 @@ body {
 
 main {
     position: relative;
+    width: 100%;
+    max-width: 488px;
 }
+
+/* ===================================
+   LAYOUT
+   =================================== */
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+table {
+    width: 100%;
+}
+
+section {
+    position: relative;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+/* ===================================
+   HEADER & IMAGES
+   =================================== */
 
 .header-image {
     transform: scaleX(-1);
@@ -15,12 +46,7 @@ main {
 }
 
 .event-image {
-    max-width: 488px;   
-}
-
-.header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    max-width: 488px;
 }
 
 #hanging-noguchi {
@@ -29,9 +55,20 @@ main {
 }
 
 #akari-noguchi {
-    float:right;
+    float: right;
     margin-top: -40px;
 }
+
+.cat {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 48px;
+}
+
+/* ===================================
+   LAMP INTERACTIVITY
+   =================================== */
 
 .lamp {
     width: 80px;
@@ -66,10 +103,9 @@ main {
   }
 }
 
-main {
-    width: 100%;
-    max-width: 488px;
-}
+/* ===================================
+   TYPOGRAPHY
+   =================================== */
 
 h2 {
     display: flex;
@@ -84,40 +120,9 @@ h2:after {
     border-top: dotted #ccc 1px;
 }
 
-table {
-    width: 100%;
-}
-section {
-    position: relative;
-}
-
-td:last-child {
-    text-align: right;
-}
-.cat{
-    position: absolute;
-    top: -10px;
-    right: 0px;
-    width: 48px;
-}
-
-/* Moving marquee that freeze on hover */
-.marquee-y {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 100;
-}
-
-.marquee-inner {
-    background-color: rgb(250, 177, 104);
-    width: fit-content;
-    font-size: 1.15rem;
-    text-align: center;
-    padding: 8px 12px;
-    pointer-events: auto;
-}
+/* ===================================
+   EVENT HEADINGS & IMAGE GALLERY
+   =================================== */
 
 /* Produces images on hover for each event heading */
 .image-container {
@@ -125,7 +130,8 @@ td:last-child {
   text-align: center;
 }
 
-.event-heading, &:visited {
+.event-heading,
+.event-heading:visited {
     color: inherit;
     text-decoration: underline;
     text-decoration-style: wavy;
@@ -134,6 +140,22 @@ td:last-child {
     text-decoration-thickness: .05em;
     text-underline-offset: .25em;
     cursor: cell;
+}
+
+/* Button reset for event-heading buttons */
+button.event-heading {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    text-align: inherit;
+}
+
+button.event-heading:focus {
+    outline: 2px solid rgb(250, 177, 104);
+    outline-offset: 2px;
 }
 
 .event-heading:hover {
@@ -151,6 +173,61 @@ td:last-child {
   height: auto;
   border-radius: 100%;
 }
+
+/* ===================================
+   MARQUEE ANIMATIONS
+   =================================== */
+
+/* Moving marquee that freezes on hover */
+.marquee-y {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    animation: bounce-vertical 20s ease-in-out infinite;
+}
+
+.marquee-x {
+    position: relative;
+    animation: bounce-horizontal 16s ease-in-out infinite;
+}
+
+.marquee-y:hover,
+.marquee-x:hover {
+    animation-play-state: paused;
+}
+
+.marquee-inner {
+    background-color: rgb(250, 177, 104);
+    width: fit-content;
+    font-size: 1.15rem;
+    text-align: center;
+    padding: 8px 12px;
+    pointer-events: auto;
+}
+
+@keyframes bounce-vertical {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 3em);
+  }
+}
+
+@keyframes bounce-horizontal {
+  0%, 100% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 15em);
+  }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
 
 /* No horizontal overflow on mobile */
 @media (max-width: 600px) {

@@ -10,22 +10,11 @@
     </head>
 
     <body>
-        <marquee
-            direction="down"
-            behavior="alternate"
-            onmouseover="this.stop();"
-            onmouseout="this.start();"
-            class="marquee-y"
-        >
-            <marquee
-                behavior="alternate"
-                class="marquee-x"
-                onmouseover="this.stop();"
-                onmouseout="this.start();"
-            >
+        <div id="marquee-container" class="marquee-y">
+            <div class="marquee-x">
                 <div class="marquee-inner">Demos & Chill 15 coming soon!</div>
-            </marquee>
-        </marquee>
+            </div>
+        </div>
 
         <main>
             <div class="header">
@@ -57,19 +46,21 @@
             </p>
             <section>
                 <img src="image/cat2.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 14"
+                    aria-label="Show images from event 14"
                 >
                     <h2>Demos from event 14</h2>
                     <div class="image-container">
                         <img
                             src=""
+                            alt="Images from event 14"
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -100,10 +91,11 @@
             </section>
             <section>
                 <img src="image/cat1.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 13"
+                    aria-label="Show images from event 13"
                 >
                     <h2>Demos from event 13</h2>
                     <div class="image-container">
@@ -113,7 +105,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -144,10 +136,11 @@
             </section>
             <section>
                 <img src="image/cat3.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 12"
+                    aria-label="Show images from event 12"
                 >
                     <h2>Demos from event 12</h2>
                     <div class="image-container">
@@ -157,7 +150,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -180,10 +173,11 @@
             </section>
             <section>
                 <img src="image/cat2.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 11"
+                    aria-label="Show images from event 11"
                 >
                     <h2>Demos from event 11</h2>
                     <div class="image-container">
@@ -193,7 +187,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -216,10 +210,11 @@
             </section>
             <section>
                 <img src="image/cat1.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 10"
+                    aria-label="Show images from event 10"
                 >
                     <h2>Demos from event 10</h2>
                     <div class="image-container">
@@ -229,7 +224,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -252,10 +247,11 @@
             </section>
             <section>
                 <img src="image/cat9.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 9"
+                    aria-label="Show images from event 9"
                 >
                     <h2>Demos from event 9</h2>
                     <div class="image-container">
@@ -265,7 +261,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -288,10 +284,11 @@
             </section>
             <section>
                 <img src="image/cat8.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 8"
+                    aria-label="Show images from event 8"
                 >
                     <h2>Demos from event 8</h2>
                     <div class="image-container">
@@ -301,7 +298,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -332,10 +329,11 @@
             </section>
             <section>
                 <img src="image/cat7.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 7"
+                    aria-label="Show images from event 7"
                 >
                     <h2>Demos from event 7</h2>
                     <div class="image-container">
@@ -345,7 +343,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -372,10 +370,11 @@
             </section>
             <section>
                 <img src="image/cat6.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 6"
+                    aria-label="Show images from event 6"
                 >
                     <h2>Demos from event 6</h2>
                     <div class="image-container">
@@ -385,7 +384,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -420,10 +419,11 @@
             </section>
             <section>
                 <img src="image/cat5.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 5"
+                    aria-label="Show images from event 5"
                 >
                     <h2>Demos from event 5</h2>
                     <div class="image-container">
@@ -433,7 +433,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -469,10 +469,11 @@
 
             <section>
                 <img src="image/cat4.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 4"
+                    aria-label="Show images from event 4"
                 >
                     <h2>Demos from event 4</h2>
                     <div class="image-container">
@@ -482,7 +483,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -514,10 +515,11 @@
 
             <section>
                 <img src="image/cat3.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 3"
+                    aria-label="Show images from event 3"
                 >
                     <h2>Demos from event 3</h2>
                     <div class="image-container">
@@ -527,7 +529,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -554,10 +556,11 @@
             </section>
             <section>
                 <img src="image/cat2.png" class="cat" alt="cute cat!" />
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 2"
+                    aria-label="Show images from event 2"
                 >
                     <h2>Demos from event 2</h2>
                     <div class="image-container">
@@ -567,7 +570,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
@@ -604,10 +607,11 @@
             <section>
                 <img src="image/cat1.png" class="cat" alt="cute cat!" />
 
-                <a
-                    href="javascript:void(0)"
+                <button
+                    type="button"
                     class="event-heading"
                     data-heading="Demos from event 1"
+                    aria-label="Show images from event 1"
                 >
                     <h2>Demos from event 1</h2>
                     <div class="image-container">
@@ -617,7 +621,7 @@
                             class="event-image"
                         />
                     </div>
-                </a>
+                </button>
 
                 <table>
                     <tr>
