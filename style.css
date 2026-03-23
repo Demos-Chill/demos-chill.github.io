@@ -154,8 +154,7 @@ button.event-heading {
 }
 
 button.event-heading:focus {
-    outline: 2px solid rgb(250, 177, 104);
-    outline-offset: 2px;
+    outline: none;
 }
 
 .event-heading:hover {
@@ -223,6 +222,49 @@ button.event-heading:focus {
   50% {
     left: calc(100% - 15em);
   }
+}
+
+/* ===================================
+   SIGNUP FORM
+   =================================== */
+
+.signup-form {
+    background: #f0f0f0;
+    padding: 16px;
+    margin: 2em 0;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.signup-row {
+    display: flex;
+    gap: 8px;
+}
+
+.signup-row input {
+    flex: 1;
+    padding: 6px 8px;
+    font: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.signup-row button {
+    padding: 6px 12px;
+    font: inherit;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-msg {
+    margin-top: 8px;
+    font-size: 0.9em;
 }
 
 /* ===================================

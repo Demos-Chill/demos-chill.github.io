@@ -126,3 +126,32 @@ function toggleLamp(lamp) {
   const isClicked = lamp.classList.toggle('clicked');
   lamp.setAttribute('aria-pressed', isClicked.toString());
 }
+
+/* ===================================
+   SIGNUP FORM
+   =================================== */
+
+document.getElementById('signup-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const email = document.getElementById('bd-email').value;
+  const msg = document.getElementById('signup-msg');
+  const btn = e.target.querySelector('button');
+  btn.disabled = true;
+  btn.textContent = '...';
+  try {
+    const res = await fetch('https://buttondown.com/api/emails/embed-subscribe/yitong', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ email }),
+      mode: 'no-cors',
+    });
+    msg.textContent = 'Check your email to confirm!';
+    msg.hidden = false;
+    e.target.querySelector('input').value = '';
+  } catch {
+    msg.textContent = 'Something went wrong, try again.';
+    msg.hidden = false;
+  }
+  btn.disabled = false;
+  btn.textContent = 'Subscribe';
+});
