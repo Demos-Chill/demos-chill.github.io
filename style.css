@@ -2,11 +2,26 @@
    BASE STYLES
    =================================== */
 
+@font-face {
+    font-family: "Monaspace Argon";
+    src: url("fonts/monaspace-argon-var.woff2") format("woff2");
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 13px;
+}
+
 body {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 32px 0;
+    font-family:
+        "Monaspace Argon", ui-monospace, SFMono-Regular, Menlo, Consolas,
+        monospace;
 }
 
 main {
@@ -15,25 +30,39 @@ main {
     max-width: 488px;
 }
 
+main > p {
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 350;
+}
+
 /* ===================================
    LAYOUT
    =================================== */
 
 .header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    position: relative;
 }
 
 table {
     width: 100%;
 }
 
+tr + tr td {
+    padding-top: 0.35rem;
+}
+
 section {
     position: relative;
 }
 
+section + section {
+    margin-top: 3rem;
+}
+
 td:last-child {
     text-align: right;
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 350;
 }
 
 /* ===================================
@@ -41,7 +70,6 @@ td:last-child {
    =================================== */
 
 .header-image {
-    transform: scaleX(-1);
     width: 100%;
 }
 
@@ -50,8 +78,11 @@ td:last-child {
 }
 
 #hanging-noguchi {
-    margin-top: -15px;
-    margin-left: -15px;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    margin: 0;
+    z-index: 1;
 }
 
 #akari-noguchi {
@@ -61,7 +92,7 @@ td:last-child {
 
 .cat {
     position: absolute;
-    top: -10px;
+    top: 2px;
     right: 0px;
     width: 48px;
 }
@@ -82,42 +113,55 @@ td:last-child {
 
 .lamp.clicked {
     filter: brightness(1.2) saturate(1.6)
-    drop-shadow(0px 0px 50px rgba(247, 220, 156, 0.85));
+        drop-shadow(0px 0px 50px rgba(247, 220, 156, 0.85));
 }
 
 @keyframes jiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(7deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  66% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(7deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    66% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 /* ===================================
    TYPOGRAPHY
    =================================== */
 
+h1 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
 h2 {
     display: flex;
     margin-block-start: 1.75em;
+    color: rgb(250, 177, 104);
+    font-size: 11px;
+    font-weight: 350;
+    text-transform: uppercase;
 }
 
 h2:after {
-    content: '';
+    content: "";
     flex: 1;
-    margin: auto .5em;
-    height: 0;
-    border-top: dotted #ccc 1px;
+    margin: auto 0.5em;
+    height: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 6'%3E%3Cpath d='M0 3 Q3 0 6 3 T12 3' fill='none' stroke='%23fab168' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 12px 6px;
 }
 
 /* ===================================
@@ -126,19 +170,14 @@ h2:after {
 
 /* Produces images on hover for each event heading */
 .image-container {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
 }
 
 .event-heading,
 .event-heading:visited {
     color: inherit;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: rgb(250, 177, 104);
-    text-decoration-line: underline;
-    text-decoration-thickness: .05em;
-    text-underline-offset: .25em;
+    text-decoration: none;
     cursor: cell;
 }
 
@@ -164,13 +203,13 @@ button.event-heading:focus {
 }
 
 .event-image {
-  position: absolute;
-  display: none;
-  left: 10em;
-  bottom: 1em;
-  width: auto;
-  height: auto;
-  border-radius: 100%;
+    position: absolute;
+    display: none;
+    left: 10em;
+    bottom: 1em;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
 }
 
 /* ===================================
@@ -207,21 +246,23 @@ button.event-heading:focus {
 }
 
 @keyframes bounce-vertical {
-  0%, 100% {
-    top: 0;
-  }
-  50% {
-    top: calc(100% - 3em);
-  }
+    0%,
+    100% {
+        top: 0;
+    }
+    50% {
+        top: calc(100% - 3em);
+    }
 }
 
 @keyframes bounce-horizontal {
-  0%, 100% {
-    left: 0;
-  }
-  50% {
-    left: calc(100% - 15em);
-  }
+    0%,
+    100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 15em);
+    }
 }
 
 /* ===================================
@@ -229,15 +270,15 @@ button.event-heading:focus {
    =================================== */
 
 .signup-form {
-    background: #f0f0f0;
-    padding: 16px;
+    background: #f3f0ea;
+    padding: 16px 16px 20px;
     margin: 2em 0;
 }
 
 .signup-form label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .signup-row {
@@ -249,14 +290,20 @@ button.event-heading:focus {
     flex: 1;
     padding: 6px 8px;
     font: inherit;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(64, 48, 35, 0.22);
+    border-radius: 0;
     background: white;
+}
+
+.signup-row input:focus-visible {
+    border-radius: 0;
+    outline-offset: 0;
 }
 
 .signup-row button {
     padding: 6px 12px;
     font: inherit;
-    background: black;
+    background: #1f1a16;
     color: white;
     border: none;
     cursor: pointer;
